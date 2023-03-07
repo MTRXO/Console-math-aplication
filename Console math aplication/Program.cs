@@ -32,7 +32,10 @@ namespace AppBody
                     string b = Console.ReadLine();
                     Console.WriteLine("c:");
                     string c = Console.ReadLine();
-                   
+                    Convert.ToDouble(a);
+                    Convert.ToDouble(b);
+                    Convert.ToDouble(c);
+
                 }
                 else
                 {
@@ -54,13 +57,15 @@ namespace AppBody
 				Console.WriteLine("Wrong input, try again");
 			}
 
-		
-			
+        }
 
+		static double Delta (double a, double b, double c)
+        {
 
+            double del = (a * a) - 4 * a * b;
+            return del;
 
         }
-		
 
 	
 	}
