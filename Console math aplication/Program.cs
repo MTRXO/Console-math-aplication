@@ -17,9 +17,23 @@ namespace AppBody
 				Console.WriteLine("Choose topic:");
                 Console.WriteLine("1.Figure fields");
                 Console.WriteLine("2.Quadratic function");
-				
+				string choose2 = Console.ReadLine();	
+				if(choose2 == "1")
+				{
+                    //Figure fields
+                }
+                else if (choose2 == "2")
+				{
+					Console.Clear();
+                    Console.WriteLine("Write below a,b and c and I'll count delta and zero places for you ");
+					Console.WriteLine();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Wrong input, try again");
+                }
 
-					
 
 
             }
@@ -40,6 +54,7 @@ namespace AppBody
 
 
         }
+		
 
 	
 	}
