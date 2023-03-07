@@ -26,7 +26,13 @@ namespace AppBody
 				{
 					Console.Clear();
                     Console.WriteLine("Write below a,b and c and I'll count delta and zero places for you ");
-					Console.WriteLine();
+					Console.WriteLine("a:");
+					string a = Console.ReadLine();
+                    Console.WriteLine("b:");
+                    string b = Console.ReadLine();
+                    Console.WriteLine("c:");
+                    string c = Console.ReadLine();
+                   
                 }
                 else
                 {
@@ -49,7 +55,7 @@ namespace AppBody
 			}
 
 		
-			Console.ReadLine();
+			
 
 
 
