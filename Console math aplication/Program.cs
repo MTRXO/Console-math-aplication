@@ -38,6 +38,7 @@ namespace AppBody
                     Console.Clear();
                     double Delt= Delta(Convert.ToDouble(a), Convert.ToDouble(b), Convert.ToDouble(c));
                     Console.WriteLine(Delt);
+                    Console.WriteLine(IsZeroPlaces(Delt));
                     Console.ReadLine();
                     
                    
@@ -71,6 +72,29 @@ namespace AppBody
             double del = (b * b) - (4 * a * c);
             return del;
 
+        }
+
+
+        static string IsZeroPlaces(double d)
+        {
+            if (d > 0)
+            {
+                return "This function have two zero places";
+
+            }
+            else if (d < 0)
+            {
+                return "This function have not zero place";
+            }
+            else if (d == 0)
+            {
+                return "This function have one zero place";
+            }
+            else return "wrong input";
+            
+         
+         
+       
         }
         
 
