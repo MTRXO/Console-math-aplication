@@ -41,6 +41,9 @@ namespace AppBody
                     double Delt= Delta(Convert.ToDouble(a), Convert.ToDouble(b), Convert.ToDouble(c));
                     Console.WriteLine(Delt);
                     Console.WriteLine(IsZeroPlaces(Delt));
+                    Console.WriteLine("Value of zero places:");
+                    Console.WriteLine(ZeroPlacesCounterx1(Convert.ToDouble(a),Convert.ToDouble(b),Delt));
+                    Console.WriteLine(ZeroPlacesCounterx2(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
                     Console.ReadLine();
                     
                    
