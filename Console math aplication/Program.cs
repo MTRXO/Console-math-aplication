@@ -100,14 +100,14 @@ namespace AppBody
         }
         static double ZeroPlacesCounterx1(double a , double b, double delta)
         {
-            double x1 = (-b- Math.Sqrt(delta) / ( 2* a) );
-            return x1;
+            double x1 = (-b- Math.Sqrt(delta));
+            return x1/(2*a);
             
         }
         static double ZeroPlacesCounterx2(double a, double b, double delta)
         {
-            double x2 = (-b + Math.Sqrt(delta) / (2 * a));
-            return x2;
+            double x2 = (-b + Math.Sqrt(delta));
+            return x2/(2*a);
 
         }
 
