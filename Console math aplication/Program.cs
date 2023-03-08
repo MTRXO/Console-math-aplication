@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Text.RegularExpressions;
 
 namespace AppBody
 {
@@ -41,10 +41,27 @@ namespace AppBody
                     double Delt= Delta(Convert.ToDouble(a), Convert.ToDouble(b), Convert.ToDouble(c));
                     Console.WriteLine(Delt);
                     Console.WriteLine(IsZeroPlaces(Delt));
-                    Console.WriteLine("Value of zero places:");
-                    Console.WriteLine(ZeroPlacesCounterx1(Convert.ToDouble(a),Convert.ToDouble(b),Delt));
-                    Console.WriteLine(ZeroPlacesCounterx2(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
-                    Console.ReadLine();
+                    if (Delt > 0)
+                    {
+                        Console.WriteLine("Value of zero places:");
+                        Console.WriteLine(ZeroPlacesCounterx1(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
+                        Console.WriteLine(ZeroPlacesCounterx2(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
+                        Console.ReadLine();
+
+                    }
+                    else if (Delt < 0)
+                    {
+                        Console.WriteLine("This function have no zero places");
+                        
+                    }
+                    else if(Delt == 0)
+                    {
+                        Console.WriteLine("This function have one zero place");
+                        Console.WriteLine(OneZeroPlace(Convert.ToDouble(a), Convert.ToDouble(b)));
+                       
+                    }   
+
+               
                     
                    
 
@@ -109,6 +126,11 @@ namespace AppBody
             double x2 = (-b + Math.Sqrt(delta));
             return x2/(2*a);
 
+        }
+        static  double OneZeroPlace(double a, double b)
+        {
+            double x0 = -b / (2 * a);
+            return x0;
         }
 
 
