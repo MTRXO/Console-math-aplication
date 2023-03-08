@@ -1,9 +1,11 @@
 ﻿using System;
+
+
 namespace AppBody
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static void Main(string[] args) //This is a main display function
 		{
 			Console.WriteLine("GENERAL MATH CALCULATOR");
             Console.WriteLine("1.Start");
@@ -66,7 +68,7 @@ namespace AppBody
 
         }
 
-		static double Delta (double a, double b, double c)
+		static double Delta (double a, double b, double c) //this function count delta value
         {
 
             double del = (b * b) - (4 * a * c);
@@ -75,7 +77,7 @@ namespace AppBody
         }
 
 
-        static string IsZeroPlaces(double d)
+        static string IsZeroPlaces(double d) //this function check if delta have any zero places
         {
             if (d > 0)
             {
@@ -92,13 +94,24 @@ namespace AppBody
             }
             else return "wrong input";
             
-         
-         
-       
         }
-        
+        static double ZeroPlacesCounterx1(double a , double b, double delta)
+        {
+            double x1 = (-b- Math.Sqrt(delta) / ( 2* a) );
+            return x1;
+            
+        }
+        static double ZeroPlacesCounterx2(double a, double b, double delta)
+        {
+            double x2 = (-b + Math.Sqrt(delta) / (2 * a));
+            return x2;
 
-	
-	}
+        }
+
+
+
+
+
+    }
 
 }
