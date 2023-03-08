@@ -35,6 +35,12 @@ namespace AppBody
                     Convert.ToDouble(a);
                     Convert.ToDouble(b);
                     Convert.ToDouble(c);
+                    Console.Clear();
+                    double Delt= Delta(Convert.ToDouble(a), Convert.ToDouble(b), Convert.ToDouble(c));
+                    Console.WriteLine(Delt);
+                    Console.ReadLine();
+                    
+                   
 
                 }
                 else
@@ -62,10 +68,11 @@ namespace AppBody
 		static double Delta (double a, double b, double c)
         {
 
-            double del = (a * a) - 4 * a * b;
+            double del = (b * b) - (4 * a * c);
             return del;
 
         }
+        
 
 	
 	}
