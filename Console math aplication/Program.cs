@@ -13,14 +13,15 @@ namespace AppBody
             Console.WriteLine("Choose option:");
             string choose1 = Console.ReadLine();
 
-            if (choose1 == "1")
+            if (choose1 == "1") // What will happen if u choose any option
             {
                 Console.Clear();
                 Console.WriteLine("Choose topic:");
                 Console.WriteLine("1.Figure fields");
                 Console.WriteLine("2.Quadratic function");
                 string choose2 = Console.ReadLine();
-                if (choose2 == "1")
+
+                if (choose2 == "1") // when user choose firugre fields
                 {
                     Console.Clear();
                     Console.WriteLine("Choose figure");
@@ -28,7 +29,8 @@ namespace AppBody
                     Console.WriteLine("2.Rectangle");
                     Console.WriteLine("3.Rectangular triangle");
                     string choose3 = Console.ReadLine();
-                    switch (choose3)
+
+                    switch (choose3) // Another types of figure fields
                     {
                         case "1": 
                             Console.Clear();
@@ -37,8 +39,9 @@ namespace AppBody
                             string value1= Console.ReadLine();     
                             Console.WriteLine( "Field =  " + SquareField(Convert.ToDouble(value1)));
                             Console.ReadLine();
-                            
+                       
                             break;
+
                         case "2":   
                             Console.Clear();
                             Console.WriteLine("Rectangle");
@@ -48,7 +51,6 @@ namespace AppBody
                             Console.WriteLine("b:");
                             string value3 = Console.ReadLine();
                             Console.WriteLine( "Field: " + RectangleField(Convert.ToDouble(value2), Convert.ToDouble(value3)));
-
                             Console.ReadLine();
                             break;
 
@@ -67,10 +69,9 @@ namespace AppBody
                     }
                   
 
-               
-
                 }
-                else if (choose2 == "2")
+
+                else if (choose2 == "2") //if user choosed a quadratic fucntion
                 {
                     Console.Clear();
                     Console.WriteLine("Write below a,b and c and I'll count delta and zero places for you ");
@@ -80,14 +81,13 @@ namespace AppBody
                     string b = Console.ReadLine();
                     Console.WriteLine("c:");
                     string c = Console.ReadLine();
-                    Convert.ToDouble(a);
-                    Convert.ToDouble(b);
-                    Convert.ToDouble(c);
+                 
                     Console.Clear();
                     double Delt = Delta(Convert.ToDouble(a), Convert.ToDouble(b), Convert.ToDouble(c));
                     Console.WriteLine("Delta: "+Delt);
                     Console.WriteLine(IsZeroPlaces(Delt));
-                    if (Delt > 0)
+
+                    if (Delt > 0) // Here program decides what if delta have specified value
                     {
                         Console.WriteLine("Value of zero places:");
                         Console.WriteLine(ZeroPlacesCounterx1(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
@@ -106,10 +106,6 @@ namespace AppBody
                         Console.WriteLine(OneZeroPlace(Convert.ToDouble(a), Convert.ToDouble(b)));
 
                     }
-
-
-
-
 
                 }
                 else
