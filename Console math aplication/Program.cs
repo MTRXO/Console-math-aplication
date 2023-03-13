@@ -28,6 +28,43 @@ namespace AppBody
                     Console.WriteLine("2.Rectangle");
                     Console.WriteLine("3.Rectangular triangle");
                     string choose3 = Console.ReadLine();
+                    switch (choose3)
+                    {
+                        case "1": 
+                            Console.Clear();
+                            Console.WriteLine("Square");
+                            Console.WriteLine("Write below length of first side: ");
+                            string value1= Console.ReadLine();     
+                            Console.WriteLine( "Field =  " + SquareField(Convert.ToDouble(value1)));
+                            Console.ReadLine();
+                            
+                            break;
+                        case "2":   
+                            Console.Clear();
+                            Console.WriteLine("Rectangle");
+                            Console.WriteLine("Write below leanght of both sides");
+                            Console.WriteLine("a:");
+                            string value2 = Console.ReadLine();
+                            Console.WriteLine("b:");
+                            string value3 = Console.ReadLine();
+                            Console.WriteLine( "Field: " + RectangleField(Convert.ToDouble(value2), Convert.ToDouble(value3)));
+
+                            Console.ReadLine();
+                            break;
+
+                        case "3":
+                            Console.Clear();
+                            Console.WriteLine("Rectangular triangle");
+                            Console.WriteLine("Write below a and h ");
+                            Console.WriteLine("a:");
+                            string value4 = Console.ReadLine();
+                            Console.WriteLine("h:");
+                            string value5 = Console.ReadLine();
+                            Console.WriteLine("Field: " + RectangularTriangleFiled(Convert.ToDouble(value4),Convert.ToDouble(value5)));
+                            Console.ReadLine();
+   
+                            break;  
+                    }
                   
 
                
@@ -145,14 +182,14 @@ namespace AppBody
         {
             return a * a;
         }
-        static double RectangleField(double a, double b)
+        static double RectangleField(double a, double b) //This function count rectangle field
         {
             return a * b;
         }
-        static double RectangularTriangleFiled(double a,double h)
+        static double RectangularTriangleFiled(double a,double h) //This function count  Rectangular triangle filed
         {
-            double field = (a * h) / 2;
-            return field;   
+              return (a * h) / 2;
+           
         }
 
 
