@@ -28,6 +28,8 @@ namespace AppBody
                     Console.WriteLine("2.Rectangle");
                     Console.WriteLine("3.Rectangular triangle");
                     string choose3 = Console.ReadLine();
+                  
+
                
 
                 }
@@ -139,6 +141,21 @@ namespace AppBody
             double x0 = -b / (2 * a);
             return x0;
         }
+        static double SquareField(double a) //This function count square field 
+        {
+            return a * a;
+        }
+        static double RectangleField(double a, double b)
+        {
+            return a * b;
+        }
+        static double RectangularTriangleFiled(double a,double h)
+        {
+            double field = (a * h) / 2;
+            return field;   
+        }
+
+
 
 
 
