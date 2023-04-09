@@ -92,20 +92,25 @@ namespace AppBody
                         Console.WriteLine("Value of zero places:");
                         Console.WriteLine(ZeroPlacesCounterx1(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
                         Console.WriteLine(ZeroPlacesCounterx2(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
-                        Console.ReadLine();
+                        
 
                     }
                     else if (Delt < 0)
                     {
                         Console.WriteLine("This function have no zero places");
+                        
+                        
 
                     }
                     else if (Delt == 0)
                     {
                         Console.WriteLine("This function have one zero place");
                         Console.WriteLine(OneZeroPlace(Convert.ToDouble(a), Convert.ToDouble(b)));
+                       
+
 
                     }
+                    Console.ReadLine();
 
                 }
                 else
