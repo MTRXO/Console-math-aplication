@@ -130,6 +130,8 @@ namespace AppBody
                 {
                     Console.Clear();
                     Console.WriteLine("You closed this app");
+                    break;
+                    
                 }
                 else
                 {
