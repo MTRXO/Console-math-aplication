@@ -23,7 +23,7 @@ namespace AppBody
                     Console.WriteLine("Choose topic:");
                     Console.WriteLine("1.Figure fields");
                     Console.WriteLine("2.Quadratic function");
-                    Console.WriteLine("Unit Converter");
+                    Console.WriteLine("3.Unit Converter");
                     string choose2 = Console.ReadLine();
 
                     if (choose2 == "1") // when user choose firugre fields
@@ -120,9 +120,14 @@ namespace AppBody
 
                     } 
 
-                    else if (choose2 = "2")
+                    else if (choose2 = "3")
                     {
-
+                        Console.Clear();
+                        Console.WriteLine("Choose type of units");
+                        Console.WriteLine("1.Lenght");
+                        Console.WriteLine("2.Weight");
+                       
+                        
                     }
                     else
                     {
