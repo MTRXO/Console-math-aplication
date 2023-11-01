@@ -101,6 +101,7 @@ namespace AppBody
                         }
                         else if (Delt < 0)
                         {
+                            Console.Clear();
                             Console.WriteLine("This function have no zero places");
 
 
@@ -116,7 +117,7 @@ namespace AppBody
                         }
                         Console.ReadLine();
 
-                    }
+                    } 
                     else
                     {
                         Console.Clear();
