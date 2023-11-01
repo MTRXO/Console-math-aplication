@@ -10,18 +10,18 @@ public class Calculations
     }
 
 
-    public string IsZeroPlaces(double d) //this function check if delta have any zero places
+    public string IsZeroPlaces(double delt) //this function check if delta have any zero places
     {
-        if (d > 0)
+        if (delt > 0)
         {
             return "This function have two zero places";
 
         }
-        else if (d < 0)
+        else if (delt < 0)
         {
             return "This function have not zero place";
         }
-        else if (d == 0)
+        else if (delt == 0)
         {
             return "This function have one zero place";
         }
@@ -58,5 +58,6 @@ public class Calculations
         return (a * h) / 2;
 
     }
+
 }
 

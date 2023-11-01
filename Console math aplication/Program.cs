@@ -126,6 +126,19 @@ namespace AppBody
                         Console.WriteLine("Choose type of units");
                         Console.WriteLine("1.Lenght");
                         Console.WriteLine("2.Weight");
+                        string choose4 = Console.ReadLine();
+                        if (choose4 == "1")
+                        {
+                            //body
+                        }
+                        else if (choose4 == "2") 
+                        {
+                            //body
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong input");
+                        }
                        
                         
                     }
