@@ -163,7 +163,14 @@ namespace AppBody
                             Console.Clear();
                             Console.WriteLine("Give me amount of this units:"); 
                             double BaseUnitsAmount = Convert.ToDouble(Console.ReadLine());
+                            Console.Clear();
 
+                            string[] ConvertedUnits = calculations.UnitConverterWeight(int.Parse(choose6), BaseUnitsAmount);
+                            foreach (string item in ConvertedUnits)
+                            {
+                                Console.WriteLine($"{item}");
+                            }
+                            Console.ReadLine();
 
 
 
