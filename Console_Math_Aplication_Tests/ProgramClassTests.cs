@@ -52,5 +52,8 @@ namespace Console_Math_Aplication_Tests
             Assert.AreEqual(CorrectZeroPlacex1, ZeroPlacex1);
         }
 
+     
+
     }
 }
+

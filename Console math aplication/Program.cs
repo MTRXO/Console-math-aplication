@@ -120,7 +120,7 @@ namespace AppBody
 
                     } 
 
-                    else if (choose2 = "3")
+                    else if (choose2 == "3")
                     {
                         Console.Clear();
                         Console.WriteLine("Choose type of units");
@@ -129,7 +129,16 @@ namespace AppBody
                         string choose4 = Console.ReadLine();
                         if (choose4 == "1")
                         {
-                            //body
+                            Console.Clear();
+                            Console.WriteLine("Choose the base units");
+                            Console.WriteLine("1.Milimeters");
+                            Console.WriteLine("2.Centimeters");
+                            Console.WriteLine("3.Meters");
+                            string choose5 = Console.ReadLine();
+                            Console.Clear();
+                            Console.WriteLine("Give me amount of units:");
+                            double BaseUnitsAmount = Convert.ToDouble(Console.ReadLine());
+                           
                         }
                         else if (choose4 == "2") 
                         {
