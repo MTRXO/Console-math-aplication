@@ -59,7 +59,7 @@ public class Calculations
 
     }
 
-    public string[] UnitConverter(int type, double value) //This function convert one type of units to the remaining types 
+    public string[] UnitConverterLenght(int type, double value) //This function convert one type of units to the remaining types 
     {
         double ToCentimeters = 0;
         double ToMeters = 0;
@@ -91,7 +91,45 @@ public class Calculations
         }
 
     }
-    
+    public string[] UnitConverterWeight(int type, double value)
+    {
+        double ToGrams = 0;
+        double ToKilograms = 0;
+        double ToTons = 0;
+
+        if (type == 1)
+        {
+            ToGrams = value;
+            ToKilograms = value / 1000;
+            ToTons = value / 10000;
+            return new string[] { $"Grams: {ToGrams}", $"Kilograms: {ToKilograms}", $"Tons: {ToTons}" };
+        }
+        else if (type == 2)
+        {
+            ToKilograms = value;
+            ToGrams = value * 1000;
+            ToTons = value / 1000;
+            return new string[] { $"Grams: {ToGrams}", $"Kilograms: {ToKilograms}", $"Tons: {ToTons}" };
+
+        }
+        else if (type == 3)
+        {
+            ToTons = value;
+            ToKilograms = value *1000;
+            ToGrams = value * 1000000;
+            return new string[] { $"Grams: {ToGrams}", $"Kilograms: {ToKilograms}", $"Tons: {ToTons}" };
+        }
+        else
+        {
+            throw new Exception("Wrong unit format");
+        }
+
+
+
+
+
+    }
+
 
 }
 

@@ -54,7 +54,7 @@ namespace Console_Math_Aplication_Tests
         [Test]
         public void UnitCoverter_test()
         {
-            string[] BaseMilimeters = calculations.UnitConverter(1, 10);
+            string[] BaseMilimeters = calculations.UnitConverterLenght(1, 10);
             string[] CorrectValue = { "Centimetres: 1", "Meters: 10000 ", "Milimeters:10" };
             Assert.AreEqual(CorrectValue, BaseMilimeters);
 
