@@ -59,7 +59,7 @@ public class Calculations
 
     }
 
-    public string[] UnitConverter(int type, double value)
+    public string[] UnitConverter(int type, double value) //This function convert one type of units to the remaining types 
     {
         double ToCentimeters = 0;
         double ToMeters = 0;

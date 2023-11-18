@@ -92,7 +92,8 @@ namespace AppBody
                         Console.WriteLine("Delta: " + Delt);
                         Console.WriteLine(calculations.IsZeroPlaces(Delt));
 
-                        if (Delt > 0) // Here program decides what if delta have specified value
+                        // Here program decides what if delta have specified value
+                        if (Delt > 0) 
                         {
                             Console.WriteLine("Value of zero places:");
                             Console.WriteLine(calculations.ZeroPlacesCounterx1(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
@@ -120,14 +121,14 @@ namespace AppBody
 
                     } 
 
-                    else if (choose2 == "3")
+                    else if (choose2 == "3") // If user choosed unit converter 
                     {
                         Console.Clear();
                         Console.WriteLine("Choose type of units");
                         Console.WriteLine("1.Lenght");
                         Console.WriteLine("2.Weight");
                         string choose4 = Console.ReadLine();
-                        if (choose4 == "1")
+                        if (choose4 == "1") // If user want to convert lenght units
                         {
                             Console.Clear();
                             Console.WriteLine("Choose the base units");
@@ -161,6 +162,7 @@ namespace AppBody
                        
                         
                     }
+
                     else
                     {
                         Console.Clear();
@@ -170,14 +172,14 @@ namespace AppBody
 
 
                 }
-                else if (choose1 == "2")
+                else if (choose1 == "2") //If user choosed option to close the app
                 {
                     Console.Clear();
                     Console.WriteLine("You closed this app");
                     break;
                     
                 }
-                else
+                else 
                 {
                     Console.Clear();
                     Console.WriteLine("Wrong input, try again");
