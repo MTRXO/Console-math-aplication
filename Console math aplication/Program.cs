@@ -93,7 +93,7 @@ namespace AppBody
                         Console.WriteLine(calculations.IsZeroPlaces(Delt));
 
                         // Here program decides what if delta have specified value
-                        if (Delt > 0) 
+                        if (Delt > 0)
                         {
                             Console.WriteLine("Value of zero places:");
                             Console.WriteLine(calculations.ZeroPlacesCounterx1(Convert.ToDouble(a), Convert.ToDouble(b), Delt));
@@ -119,7 +119,7 @@ namespace AppBody
                         }
                         Console.ReadLine();
 
-                    } 
+                    }
 
                     else if (choose2 == "3") // If user choosed unit converter 
                     {
@@ -144,23 +144,37 @@ namespace AppBody
                             string[] ConvertedUnits = calculations.UnitConverter(int.Parse(choose5), BaseUnitsAmount);
                             foreach (string item in ConvertedUnits)
                             {
-                             Console.WriteLine($"{item}");
+                                Console.WriteLine($"{item}");
                             }
                             Console.ReadLine();
 
-                            
+
 
                         }
-                        else if (choose4 == "2") 
+                        else if (choose4 == "2")
                         {
-                            //body
+                            Console.Clear();
+                            Console.Clear();
+                            Console.WriteLine("Choose the base units");
+                            Console.WriteLine("1.Grams");
+                            Console.WriteLine("2.Kilograms");
+                            Console.WriteLine("3.Tons");
+                            string choose6 = Console.ReadLine();
+                            Console.Clear();
+                            Console.WriteLine("Give me amount of this units:"); 
+                            double BaseUnitsAmount = Convert.ToDouble(Console.ReadLine());
+
+
+
+
+
                         }
                         else
                         {
                             Console.WriteLine("Wrong input");
                         }
-                       
-                        
+
+
                     }
 
                     else
@@ -177,26 +191,26 @@ namespace AppBody
                     Console.Clear();
                     Console.WriteLine("You closed this app");
                     break;
-                    
+
                 }
-                else 
+                else
                 {
                     Console.Clear();
                     Console.WriteLine("Wrong input, try again");
+
+
                 }
-
             }
-
         }
+
+
+
+
+
+
+
+
+
+
     }
-
-
-    
-
-
-
-
-
-    
-
 }
