@@ -138,7 +138,17 @@ namespace AppBody
                             Console.Clear();
                             Console.WriteLine("Give me amount of units:");
                             double BaseUnitsAmount = Convert.ToDouble(Console.ReadLine());
-                           
+                            Console.Clear();
+
+                            string[] ConvertedUnits = calculations.UnitConverter(int.Parse(choose5), BaseUnitsAmount);
+                            foreach (string item in ConvertedUnits)
+                            {
+                             Console.WriteLine($"{item}");
+                            }
+                            Console.ReadLine();
+
+                            
+
                         }
                         else if (choose4 == "2") 
                         {
