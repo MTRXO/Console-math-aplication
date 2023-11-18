@@ -59,7 +59,38 @@ public class Calculations
 
     }
 
-   
+    public string[] UnitConverter(int type, double value)
+    {
+        double ToCentimeters = 0;
+        double ToMeters = 0;
+        double ToMilimeters = 0;
+        if (type == 1)
+        {
+            ToCentimeters = value / 10;
+            ToMeters = value / 1000;
+            ToMilimeters = value;
+            return new string[] { $"Centimeters: {ToCentimeters}", $"Meters: {ToMeters}", $"Milimeters: {ToMilimeters}" };
+        }
+        else if (type == 2)
+        {
+            ToMilimeters = value * 10;
+            ToMeters = value / 100;
+            ToCentimeters = value;
+            return new string[] { $"Centimeters: {ToCentimeters}", $"Meters: {ToMeters}", $"Milimeters: {ToMilimeters}" };
+        }
+        else if (type == 3)
+        {
+            ToCentimeters = value * 100;
+            ToMeters = value;
+            ToMilimeters = value * 1000;
+            return new string[] { $"Centimeters: {ToCentimeters}", $"Meters: {ToMeters}", $"Milimeters: {ToMilimeters}" };
+        }
+        else
+        {
+            throw new Exception("Wrong unit format");
+        }
+
+    }
 
 }
 
