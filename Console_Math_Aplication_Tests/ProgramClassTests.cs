@@ -55,7 +55,7 @@ namespace Console_Math_Aplication_Tests
         public void UnitCoverterLenght_test()
         {
             string[] BaseMilimeters = calculations.UnitConverterLenght(1, 10);
-            string[] CorrectValue = { "Centimetres: 1", "Meters: 10000 ", "Milimeters:10" };
+            string[] CorrectValue = { "Centimeters: 1", "Meters: 0,01", "Milimeters: 10" };
             Assert.AreEqual(CorrectValue, BaseMilimeters);
 
         }
@@ -63,7 +63,7 @@ namespace Console_Math_Aplication_Tests
         public void UnitCoverterWeight_test()
         {
             string[] BaseMilimeters = calculations.UnitConverterWeight(1, 10);
-            string[] CorrectValue = { "Grams: 10", "Kilograms: 0.010 ", "Tons:0.0010" };
+            string[] CorrectValue = { "Grams:10", "Kilograms:0,01", "Tons:0,001" };
             Assert.AreEqual(CorrectValue, BaseMilimeters);
         }
 

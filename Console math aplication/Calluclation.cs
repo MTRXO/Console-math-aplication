@@ -102,14 +102,14 @@ public class Calculations
             ToGrams = value;
             ToKilograms = value / 1000;
             ToTons = value / 10000;
-            return new string[] { $"Grams: {ToGrams}", $"Kilograms: {ToKilograms}", $"Tons: {ToTons}" };
+            return new string[] { $"Grams:{ToGrams}", $"Kilograms:{ToKilograms}", $"Tons:{ToTons}" };
         }
         else if (type == 2)
         {
             ToKilograms = value;
             ToGrams = value * 1000;
             ToTons = value / 1000;
-            return new string[] { $"Grams: {ToGrams}", $"Kilograms: {ToKilograms}", $"Tons: {ToTons}" };
+            return new string[] { $"Grams:{ToGrams}", $"Kilograms:{ToKilograms}", $"Tons:{ToTons}" };
 
         }
         else if (type == 3)
@@ -117,7 +117,7 @@ public class Calculations
             ToTons = value;
             ToKilograms = value *1000;
             ToGrams = value * 1000000;
-            return new string[] { $"Grams: {ToGrams}", $"Kilograms: {ToKilograms}", $"Tons: {ToTons}" };
+            return new string[] { $"Grams:{ToGrams}", $"Kilograms:{ToKilograms}", $"Tons:{ToTons}" };
         }
         else
         {
