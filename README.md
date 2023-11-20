@@ -1,6 +1,6 @@
 #What is this ?
 
-Hello it is my math application wchich will help you in counting a few types of opertions. 
+Hello it is my math application which will help you in counting a few types of opertions. 
 
 #Navigation 
 
